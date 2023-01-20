@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/beginner_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Beginner"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/advanced_button"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/advanced_button"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.267" />
+
+        <Button
+            android:id="@+id/advanced_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="advanced"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/beginner_button" />
+
+        <Button
+            android:id="@+id/expert_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Expert"
+            app:layout_constraintEnd_toEndOf="@+id/advanced_button"
+            app:layout_constraintStart_toStartOf="@+id/advanced_button"
+            app:layout_constraintTop_toBottomOf="@+id/advanced_button" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
